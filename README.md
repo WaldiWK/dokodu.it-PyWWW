@@ -1,11 +1,15 @@
 # Start
-    stwórz środowisko Python (patrz szkolenie PyWWW z serwisu dokodu.it)
+
+1. stwórz środowisko Python (patrz szkolenie PyWWW z serwisu dokodu.it)
 `python3 -m venv pywww-venv`
-    stwórz wygodny link do aktywacji
+
+2. stwórz wygodny link do aktywacji
 `ln -s pywww-venv/bin/activate .`
-    uruchom środowisko
+
+3. uruchom środowisko
 `source activate`
-    zainstaluj zależności
+
+4. zainstaluj zależności
 `pip install -r requirements.txt`
 
 # szkolenie PyWWW z serwisu dokodu.it
