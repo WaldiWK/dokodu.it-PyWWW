@@ -31,8 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'books.apps.BooksConfig',
-    'posts.apps.PostsConfig',
+    # django
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # apps fom external modules
+    'django_extensions',
+    # project apps
+    'books.apps.BooksConfig',
+    'posts.apps.PostsConfig',
 ]
 
 MIDDLEWARE = [
