@@ -16,5 +16,8 @@ class Post(models.Model):
     # data utworzenia - tylko przy utworzeniu
     modified = models.DateTimeField(auto_now=True)
     # data modyfikacji - zawsze gdy klikniemy save
+
+    def __str__(self):
+        return f"{self.id} {self.title}"
     
 

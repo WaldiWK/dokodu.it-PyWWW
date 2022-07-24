@@ -41,3 +41,12 @@
 
 `django-admin startproject nazwa` 
     tworzy projekt o nazwie nazwa
+
+
+# django-extensions
+installacja:
+`pip install django-extensions`
+
+add to project:
+`echo "# shell_plus" >>   pywww/settings.py`
+`echo "SHELL_PLUS_PRINT_SQL = True" > settings.py`

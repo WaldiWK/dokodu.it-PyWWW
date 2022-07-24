@@ -10,3 +10,6 @@ class Book(models.Model):
     publication_year=models.PositiveIntegerField()
     author = models.CharField(max_length=255)
 
+    def __str__(self):
+        return(f"{self.title} {self.author} {self.publication_year}")
+
