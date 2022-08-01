@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # django
-    'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
     # project apps
     'books.apps.BooksConfig',
     'posts.apps.PostsConfig',
+    'main.apps.MainConfig',
 ]
 
 MIDDLEWARE = [
