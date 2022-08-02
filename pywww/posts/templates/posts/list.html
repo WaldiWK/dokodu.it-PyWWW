@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>post list</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="posts" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <h1>Lista postów</h1>
+        {% for post in posts %}
+            <ul>
+                <li>{{ post }}</li>
+            </ul>
+        {% endfor %}
+    </body>
+</html>
