@@ -1,0 +1,13 @@
+[
+{
+  "model": "books.book",
+  "pk": 1,
+  "fields": {
+    "title": "Testowa Książka",
+    "description": "To jest pierwsza dodana książka do naszej biblioteki",
+    "aviable": true,
+    "publication_year": 2010,
+    "author": "W.K."
+  }
+}
+]

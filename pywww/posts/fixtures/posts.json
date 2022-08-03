@@ -1,0 +1,50 @@
+[
+{
+  "model": "posts.post",
+  "pk": 1,
+  "fields": {
+    "title": "test",
+    "content": "testowa zawartość",
+    "published": false,
+    "created": "2022-07-20T12:14:51.473Z",
+    "modified": "2022-07-20T12:14:51.473Z",
+    "sponsored": false
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 2,
+  "fields": {
+    "title": "nowy post",
+    "content": "Nowy post to bardzo skomplikowany temat do opisu",
+    "published": true,
+    "created": "2022-07-24T10:39:52.469Z",
+    "modified": "2022-07-24T16:03:47.362Z",
+    "sponsored": false
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "title": "googbyes!!!",
+    "content": "Good bye friends",
+    "published": false,
+    "created": "2022-07-24T10:40:46.376Z",
+    "modified": "2022-07-24T10:40:46.376Z",
+    "sponsored": false
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 4,
+  "fields": {
+    "title": "Nowy Post",
+    "content": "To będzie zupełnie nowy sponsorowany post",
+    "published": true,
+    "created": "2022-08-02T15:34:43.835Z",
+    "modified": "2022-08-02T15:35:02.212Z",
+    "sponsored": true
+  }
+}
+]
