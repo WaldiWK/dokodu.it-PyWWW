@@ -1,8 +1,10 @@
 from django.shortcuts import render
+from .models import Book
 
-# Create your views here.
-from django.http import HttpResponse
-
-def my_library(request):
-    return HttpResponse('Tu Będzie moja Biblioteka')
+def books_list(request):
+    context = {
+        "title":"Mój spis książek",
+        "books": Book.objects.all()
+    }
+    return render(request,"books/books_list.html",context)
     
