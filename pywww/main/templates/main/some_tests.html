@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>some tests</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="HTML, CSS, JavaScript" />
-        <link rel="stylesheet" href="" />
-    </head>
-    <body>
-        <h1>Mam na imię {{ first_name }}</h1>
-        <div>Wiek: {{ age }}</div>
-        <h2>Dzieci</h2>
-        <ul>
-            {% for child in children %}<li>{{ child }}</li>{% endfor %}
-        </ul>
-        <h2>Programuję w:</h2>
-        <ol>
-            {% for language, level in languages.items %}<li>{{ language }} {{ level }}</li>{% endfor %}
-        </ol>
-        
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+    O projekcie
+{% endblock title %}
+{% block content %}
+    <h1>Mam na imię {{ first_name }}</h1>
+    <div>Wiek: {{ age }}</div>
+    <h2>Dzieci</h2>
+    <ul>
+        {% for child in children %}<li>{{ child }}</li>{% endfor %}
+    </ul>
+    <h2>Programuję w:</h2>
+    <ol>
+        {% for language, level in languages.items %}<li>{{ language }} {{ level }}</li>{% endfor %}
+    </ol>
+{% endblock content %}

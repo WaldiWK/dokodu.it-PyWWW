@@ -1,14 +1,11 @@
-#from django.shortcuts import render
-
-# Create your views here.
-from django.http import HttpResponse
-from django.template import loader
 from django.shortcuts import render
 
 
+def about(request):
+    return render (request,'main/about.html',context={})
+
 def hello_world(request):
-    template = loader.get_template('main/about.html')
-    return HttpResponse(template.render())
+    return render (request,"main/hello_world.html",context={})   
 
 
 def some_tests(request):

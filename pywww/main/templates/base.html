@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            {% block title %}
+            {% endblock title %}
+        </title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="posts" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <header>
+            {% block header %}
+            {% endblock header %}
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'main:about' %}">Strona główna</a>
+                </li>
+                <li>
+                    <a href="{% url 'posts:list' %}">Lista postów</a>
+                </li>
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock content %}
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{% url 'main:about' %}">about</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
