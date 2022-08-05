@@ -1,1 +1,0 @@
-SHELL_PLUS_PRINT_SQL = True
