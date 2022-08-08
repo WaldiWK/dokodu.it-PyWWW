@@ -2,4 +2,4 @@ ul {list-style-type: none;}
 
 ul li:nth-child(odd) a {background-color: white}
 
-ul li:nth-child(odd) {background-color: blue;}
+ul.posts_list li:nth-child(odd) {background-color: red;}
