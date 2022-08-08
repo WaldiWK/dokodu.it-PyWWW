@@ -1,5 +1,5 @@
 ul {list-style-type: none;}
 
-ul li:nth-child(odd) a {background-color: white}
-
-ul.posts_list li:nth-child(odd) {background-color: red;}
+ul.posts_list li a {color: black}
+ul.posts_list li a:hover {color: #d00149;} 
+ul.posts_list li:nth-child(odd) {background-color: #f2f2f2;}

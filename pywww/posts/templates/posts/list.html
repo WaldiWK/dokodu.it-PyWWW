@@ -8,11 +8,12 @@
 {% endblock style %}
 {% block content %}
     <h1>Lista postów</h1>
-    <ul class="posts_list">
+    <ul class="list-group posts_list">
         {% for post in posts %}
-            <li>
-                <a href="{% url 'posts:details' post.id %}">{{ post.title }}</a>
-                {% if post.sponsored %}(sponsorowany){% endif %}
+            <li class="list-group-item ">
+                <a href="{% url 'posts:details' post.id %}">{{ post.title }}
+                    {% if post.sponsored %}(sponsorowany){% endif %}
+                </a>
             </li>
         {% endfor %}
     </ul>
