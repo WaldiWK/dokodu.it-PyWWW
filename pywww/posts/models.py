@@ -18,6 +18,8 @@ class Post(models.Model):
     # data modyfikacji - zawsze gdy klikniemy save
     sponsored = models.BooleanField(default=False)
 
+    author = models.ForeignKey("auth.User", on_delete=models.CASCADE,related_name="posts")
+
     def __str__(self):
         return f"{self.id} {self.title}"
     
