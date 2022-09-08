@@ -131,3 +131,6 @@ dmypy.json
 
 # link to activate
 activate
+
+# apple catalog
+.DS_STORE
