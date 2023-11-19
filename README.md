@@ -42,6 +42,13 @@
 `django-admin startproject nazwa` 
     tworzy projekt o nazwie nazwa
 
+# Django shell
+
+`python manage.py shell`
+    Uruchamia zbootstrapowane Django w konsoli.
+    Aby załądować modele itd, trzeba dodatkowo przeprowadzić import modelów.
+        `from posts.models import Post`
+
 
 # django-extensions
 installacja:
