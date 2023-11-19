@@ -42,18 +42,39 @@
 `django-admin startproject nazwa` 
     tworzy projekt o nazwie nazwa
 
-# Django shell
-
-`python manage.py shell`
-    Uruchamia zbootstrapowane Django w konsoli.
-    Aby załądować modele itd, trzeba dodatkowo przeprowadzić import modelów.
-        `from posts.models import Post`
-
 
 # django-extensions
 installacja:
+    najpierw instalujemy django-extensions
+
 `pip install django-extensions`
 
-add to project:
-`echo "# shell_plus" >>   pywww/settings.py`
-`echo "SHELL_PLUS_PRINT_SQL = True" > settings.py`
+a następnie dodajemy 'django-extensions' do definicji aplikacji w settings.py, tuż przed modelami:
+```python
+...
+# Application definition
+
+INSTALLED_APPS = [
+    # django
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # apps fom external modules
+    'django_extensions',
+    # project apps
+    'books.apps.BooksConfig',
+    'posts.apps.PostsConfig',
+]
+...
+```
+
+
+Możemy wkleić też poniższe linie w terminala, dodadzą one odpowiednie wpisy do settings.py, aby shell_plus dodawał informacje o zapytaniach SQL:
+```bash
+
+echo "# shell_plus" >>   pywww/settings.py
+echo "SHELL_PLUS_PRINT_SQL = True" > settings.pya
+```
